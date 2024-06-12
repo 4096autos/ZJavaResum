@@ -1,23 +1,31 @@
-/*
-	bases numériques	: 	décimale		(10	-> 0 à 9) 	14
-							binéaire		(2	-> 0 à 1) 	0b11110111
-							octale			(8	-> 0 à 7) 	0755
-							hexadécimale	(16	-> 0 à F)	0xAF55
-	nombre entier 		: 	14
-							18_666
-							100_000_000_000
-
-	\n : nouvelle ligne
-	\t : tabulation
-	\r : retour chariot
-	\b : retour arrière
-	\f : nouvelle page
-
-*/
 public class MainApp
 {
 	public static void main(String[] args)
 	{
-		System.out.println("\tBonjour tout le monde ! :)\n");
+		// V A R I A B L E S ----------------------------
+		
+		// variable Declaration, Affectation
+		int ageUser = 0;
+		// variable Affichage
+		System.out.println(ageUser);
+
+		// variable Declaration, Affectation
+		ageUser = 24;
+		System.out.println(ageUser);
+
+		// C O N S T A N T E S ----------------------------
+
+		// constantes Declaration
+		final int ONE_NUMBER = 26;
+		System.out.println(ONE_NUMBER);
+
+		// constantes test
+		//ONE_NUMBER = 14;
+		System.out.println(ONE_NUMBER);
+
+		// Constantes Declaration, Affection
+		final float PI = 3;
+		System.out.println(PI);
+
 	}
 }
