@@ -205,3 +205,24 @@ types_de_donnees | variables_constantes | operateurs | conditions | boucles
 				}
 			}
 		}
+//-------------------------------------------------------------------------------------
+Class - Constructeur - OBJET/instance - this 
+//-------------------------------------------------------------------------------------
+// Class App 
+    public class App
+    {
+        public static void main(String []args)
+        {
+            Cat miaou = new Cat();  // instance/objet de la classe Cat
+            Cat miaou2 = new Cat(); // instance/objet de la classe Cat
+        }
+    }
+
+// Class Cat pour instanciation dans le fichier Cat.java
+    public class Cat
+    {
+        public Cat()
+        {
+            System.out.println("Je suis un chat" + this);
+        }
+    }
