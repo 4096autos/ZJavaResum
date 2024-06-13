@@ -2,6 +2,7 @@ public class MainApp
 {
 	public static void main(String[] args)
 	{
+		/* VARIABLES | CONSTANTES | OPERATEURS | INCREMENTATIONS | COMPARAISONS */
 		System.out.println("-------------------\n"+
 		"V A R I A B L E S\n"+"-------------------");
 		// variable Declaration, Affectation
@@ -67,6 +68,7 @@ public class MainApp
 		boolean resultb = 14 < 25;
 
 		System.out.println(resultb);
+
 
 	}
 }
