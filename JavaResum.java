@@ -206,18 +206,31 @@ types_de_donnees | variables_constantes | operateurs | conditions | boucles
 			}
 		}
 //-------------------------------------------------------------------------------------
-Class - Constructeur - this - Attribut - OBJET/instance
+NEW.Class - Constructeur - this - Attribut - OBJET/instance
 //-------------------------------------------------------------------------------------
-// Class App 
-    public class App
-    {
-        public static void main(String []args)
-        {
-            Cat miaou = new Cat();  // instance/objet de la classe Cat
-            Cat miaou2 = new Cat(); // instance/objet de la classe Cat
-        }
-    }
+// Class App  MAIN CLASS
+	public class App
+	{
+		public static void main(String []args)
+		{
+			System.out.println("-----------------------------------");
+			// For Cat
+			System.out.println("For CAT ");
+			System.out.println("--------------");
+			Cat miaou = new Cat("Kito", 1); // Instanciation de l'objet miaou
+			Cat miaou2 = new Cat("Felix", 5); // Instanciation de l'objet miaou2
 
+			System.out.println("--------------   ----------------");
+			
+			// For Player
+			System.out.println("For PLAYER ");
+			System.out.println("--------------");
+			Player p1 = new Player();// Instanciation de l'objet p1
+			p1.attack(); //Appel à la methode attack()
+
+			System.out.println("-----------------------------------");
+		}
+	}
 // Class Cat pour instanciation dans le fichier Cat.java
     public class Cat
     {
@@ -231,5 +244,22 @@ Class - Constructeur - this - Attribut - OBJET/instance
 
             System.out.println(this.aName + " - " + this.aAge);
         }
-  
-    }
+	}
+// Class Player pour instanciation dans le fichier Player.java
+	public class Player
+	{
+		private String aName;// Attribut/variable membres de classe
+		private int aLevel;// Attribut/variable membres de classe
+
+		public Player() // Constructeur(...)
+		{
+			this.aName = "Inconnu";
+			this.aLevel = 1;
+			System.out.println(this.aName + " : " + " L " + this.aLevel);
+		}
+
+		public void attack() // Methode attack()
+		{
+			System.out.println(this.aName + " attaque un cible !");
+		}
+	}	
