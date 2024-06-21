@@ -232,6 +232,7 @@ NEW.Class - Constructeur - this - Attribut - OBJET/instance
         System.out.println("--------------   ----------------");
         
         // For SoftwareRegistration
+		 System.out.println("For <<"+ SoftwareRegistration.getNumberOfRegistration() +">> Software Registration ");
         System.out.println("For Software Registration ");
         System.out.println("--------------");
         SoftwareRegistration sr = new SoftwareRegistration(2020);// Instanciation de l'objet p1
@@ -296,4 +297,6 @@ public class SoftwareRegistration
     private int aExpirationYear;
     public int getExpirationYear(){ return this.aExpirationYear;} //[ACCESSEURS : Getter]
     public void setExpirationYear(int expiration){ this.aExpirationYear = expiration;} //[ACCESSEURS : setter]
+
+	public static int getNumberOfRegistration(){ return aNumberOfRegistration;} //[ACCESSEURS : Getter]
 }
