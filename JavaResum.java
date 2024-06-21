@@ -262,4 +262,23 @@ NEW.Class - Constructeur - this - Attribut - OBJET/instance
 		{
 			System.out.println(this.aName + " attaque un cible !");
 		}
-	}	
+	}
+//-------------------------------------------------------------------------------------
+Encapsulation données - SoftwareRegistration - SoftwareRegistration.java
+//-------------------------------------------------------------------------------------
+//	SoftwareRegistration.java [ACCESSEURS]
+public class SoftwareRegistration
+{
+	/*
+		[ACCESSEURS]
+			getters : accès à un attribut (lecture)
+			setters	: modification d'un attribut
+	*/
+	private int aExpirationYear;
+
+	public SoftwareRegistration (int expiration)
+	{
+		this.aExpirationYear = expiration;
+		System.out.println("Enregistrement du produit, valide jusqu'en " + this.aExpirationYear);
+	}
+}
