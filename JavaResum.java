@@ -228,8 +228,17 @@ NEW.Class - Constructeur - this - Attribut - OBJET/instance
 			Player p1 = new Player();// Instanciation de l'objet p1
 			p1.attack(); //Appel à la methode attack()
 
-			System.out.println("-----------------------------------");
-		}
+			
+        System.out.println("--------------   ----------------");
+        
+        // For SoftwareRegistration
+        System.out.println("For Software Registration ");
+        System.out.println("--------------");
+        SoftwareRegistration sr = new SoftwareRegistration(2020);// Instanciation de l'objet p1
+		sr.setExpirationYear(2050);// setters
+        System.out.println("Changement de date : " + sr.getExpirationYear()); // getters
+        System.out.println("-----------------------------------");
+
 	}
 // Class Cat pour instanciation dans le fichier Cat.java
     public class Cat
@@ -266,19 +275,25 @@ NEW.Class - Constructeur - this - Attribut - OBJET/instance
 //-------------------------------------------------------------------------------------
 Encapsulation données - SoftwareRegistration - SoftwareRegistration.java
 //-------------------------------------------------------------------------------------
-//	SoftwareRegistration.java [ACCESSEURS]
+//	SoftwareRegistration.java [ACCESSEURS - setter and getter]
 public class SoftwareRegistration
 {
+    // Variable de Classe
+    private static int aNumberOfRegistration = 5;
+
 	/*
 		[ACCESSEURS]
 			getters : accès à un attribut (lecture)
 			setters	: modification d'un attribut
 	*/
-	private int aExpirationYear;
-
+	
 	public SoftwareRegistration (int expiration)
 	{
 		this.aExpirationYear = expiration;
 		System.out.println("Enregistrement du produit, valide jusqu'en " + this.aExpirationYear);
 	}
+
+    private int aExpirationYear;
+    public int getExpirationYear(){ return this.aExpirationYear;} //[ACCESSEURS : Getter]
+    public void setExpirationYear(int expiration){ this.aExpirationYear = expiration;} //[ACCESSEURS : setter]
 }
