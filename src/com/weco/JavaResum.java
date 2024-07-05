@@ -242,7 +242,7 @@ NEW.Class - Constructeur - this - Attribut - OBJET/instance
         System.out.println("Changement de date : " + sr.getExpirationYear()); // getters
         System.out.println("-----------------------------------");
         
-        // For Table
+        	// For Table
  		System.out.println("For Table");
  		System.out.println("--------------");
  		Table tab1 = new Table();// Instanciation de l'objet miaou
@@ -253,6 +253,11 @@ NEW.Class - Constructeur - this - Attribut - OBJET/instance
  		System.out.println("--------------   ----------------");
  		int[] ta = { 1, 2, 3 };
  		tab1.printTab(ta);
+
+		// For String
+		System.out.println("For Strings");
+		Stringg strr = new Stringg();
+		strr.showStrings();
 
 	}
 // Class Cat pour instanciation dans le fichier Cat.java
